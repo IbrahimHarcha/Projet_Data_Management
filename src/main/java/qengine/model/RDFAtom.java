@@ -4,9 +4,10 @@ import fr.boreal.model.logicalElements.api.Atom;
 import fr.boreal.model.logicalElements.api.Predicate;
 import fr.boreal.model.logicalElements.api.Term;
 import fr.boreal.model.logicalElements.factory.impl.SameObjectPredicateFactory;
+import fr.boreal.model.logicalElements.factory.impl.SameObjectTermFactory;
 import fr.boreal.model.logicalElements.impl.AtomImpl;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * Représentation d'un triplet RDF sous forme d'atome.
@@ -93,4 +94,7 @@ public class RDFAtom extends AtomImpl {
         sb.append('>');
         return sb.toString();
     }
+
+
+
 }
